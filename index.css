@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -40,7 +39,6 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
-/* Main Content Styles */
 main {
     padding: 20px;
 }
@@ -62,7 +60,7 @@ p {
     line-height: 1.6;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #333;
     color: #fff;
