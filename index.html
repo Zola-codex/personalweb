@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelalem Tegene - Portfolio</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <header>
+        <h1>Zelalem Tegene</h1>
+        <h2>Computer Science Student</h2>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Technical Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is the homepage of my portfolio website. Scroll down or use the navigation to explore more.</p>
+            <img src="pic1.jpg.jpg" alt="welcome image">
+            <!-- You can add images, additional text, or other elements to customize your homepage -->
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and dedicated Computer Science student with a strong interest in web development and software engineering. I enjoy solving complex problems and creating innovative solutions using cutting-edge technologies.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Unity University, Addis Ababa, Ethiopia</p>
+            <p>Currently in the Third Year</p>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Java, C++</li>
+                <li>Web Development: HTML/CSS, JavaScript, PHP</li>
+                <li>Tools: IntelliJ IDEA, Visual Studio Code</li>
+                <li>Operating Systems: Windows</li>
+                <li>Databases: MySQL</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>1, Online Spare Parts Website (Group Project)</h3>
+            <p>Developed an ecommerce Dynamic Website using HTML, CSS, JavaScript for the front end, PHP <br>
+               with Express for the back end. Implemented user authentication, product browsing, <br>
+               Admin Dashboard, and shopping cart functionality.</p>
+               <img src="project1-screenshot.jpg" alt="Project 1 Screenshot">
+               <p><a href="https://example.com" target="_blank">Live Demo</a></p>
+            <h3>2, Database (Group Project) </h3>
+            <p>Title- [School Registration ] </p>
+            <h3>3, Data Structures and Algorithm (Individual Assignment) </h3>
+            <p>Title- [Airplane reservation]</p>
+            <h3>4,Object Oriented Programming (Java-1) (Individual Assignment) </h3>
+            <p>Title- [School Registration]</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: 0986408483 | 0962997032</p>
+            <p>Email: zelalemtegene53@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BLLgZLJrJQb2duToAki0%2BSg%3D%3D">Profile</a></p>
+            <p>Address: Addis Ababa, Ethiopia</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zelalem Tegene. All rights reserved.</p>
+    </footer>
+   <script>
+        
+        const navLinks = document.querySelectorAll('.nav-link');
+
+   
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); 
+
+               
+                const targetId = link.getAttribute('href').substring(1);
+
+                
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
